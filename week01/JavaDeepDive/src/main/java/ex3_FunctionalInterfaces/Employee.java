@@ -1,13 +1,15 @@
 package ex3_FunctionalInterfaces;
 
-    public class Employee {
+import java.time.LocalDate;
+
+public class Employee {
 
         //instance variables
         private String name;
         private int age;
 
         //no-arg constructor
-        public Employee() {
+        public Employee(String rikke, LocalDate localDate) {
         }
 
         //constructor with name parameter

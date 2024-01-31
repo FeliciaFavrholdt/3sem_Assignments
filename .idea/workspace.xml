@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b8dac3d-0488-4288-bd11-fb1a917fa041" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex4_TimeAPI/Examples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/taskOne_Lambda/ArithmeticOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex1_Lambda/ArithmeticOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/taskOne_Lambda/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex1_Lambda/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/taskTwo_FunctionalProgramming/MyExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex2_FunctionalProgramming/MyExamples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/taskTwo_FunctionalProgramming/MyTransformingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex2_FunctionalProgramming/MyTransformingType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/taskTwo_FunctionalProgramming/MyValidatingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex2_FunctionalProgramming/MyValidatingType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex3_FunctionalInterfaces/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/src/main/java/ex3_FunctionalInterfaces/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,28 +36,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.InterfaceExamples.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MyExamples.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fefav/Desktop/3sem/3sem_Assignments&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Examples.executor": "Run",
+    "Application.InterfaceExamples.executor": "Run",
+    "Application.MyExamples.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/fefav/Desktop/3sem/3sem_Assignments",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.InterfaceExamples">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ex4_TimeAPI" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Examples">
+    <configuration name="Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ex4_TimeAPI.Examples" />
+      <module name="JavaDeepDive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ex4_TimeAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InterfaceExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex3_FunctionalInterfaces.InterfaceExamples" />
       <module name="JavaDeepDive" />
@@ -89,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Examples" />
         <item itemvalue="Application.InterfaceExamples" />
         <item itemvalue="Application.MyExamples" />
       </list>
@@ -112,7 +129,7 @@
       <workItem from="1706730733775" duration="58000" />
       <workItem from="1706730857366" duration="231000" />
       <workItem from="1706731104732" duration="5660000" />
-      <workItem from="1706736788508" duration="2118000" />
+      <workItem from="1706736788508" duration="4592000" />
     </task>
     <servers />
   </component>
