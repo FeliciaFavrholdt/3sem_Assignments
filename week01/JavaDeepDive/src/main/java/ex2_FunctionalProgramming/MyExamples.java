@@ -1,9 +1,9 @@
-package taskTwo_FunctionalProgramming;
+package ex2_FunctionalProgramming;
 
 public class MyExamples implements MyTransformingType, MyValidatingType {
 
     public static void main(String[] args) {
-        //Task 2.3 - implementation - functional programming
+        //2.3 - implementation - functional programming
 
         // Implementing methods using lambda expressions
         MyTransformingType addTwo = (x) -> x + 2;

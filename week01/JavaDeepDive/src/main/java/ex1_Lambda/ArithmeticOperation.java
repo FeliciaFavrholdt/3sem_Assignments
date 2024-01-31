@@ -1,4 +1,4 @@
-package taskOne_Lambda;
+package ex1_Lambda;
 
 @FunctionalInterface
 public interface ArithmeticOperation {

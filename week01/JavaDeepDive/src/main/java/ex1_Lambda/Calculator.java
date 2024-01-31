@@ -1,4 +1,4 @@
-package taskOne_Lambda;
+package ex1_Lambda;
 
 import java.util.Arrays;
 
