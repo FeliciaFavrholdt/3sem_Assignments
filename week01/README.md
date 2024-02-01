@@ -31,14 +31,12 @@
         * 6.1 create book class (Book.java)
         * 6.2 -> 6.5 implementation of methods (Examples.java)
 
-    Exercise 7: Collectors - UNCOMPLETED
+    Exercise 7: Collectors - COMPLETED
     - see solution for 7.1 -> 7.4 in files via package JavaDeepDive/src/main/java/ex7_Collectors
-        * 7.1 
-        * 7.2 
-        * 7.3 
-        * 7.4  
+        * 7.1 create Transaction class (Transaction.java)
+        * 7.2 -> 7.4 implementation of methods (Examples.java)
 
-    Exercise 8: Generics - UNCOMPLETED
+    Exercise 8: Generics - DOING
     - see solution for 8.1 -> 8.3 in files via package JavaDeepDive/src/main/java/ex8_Generics
         * 8.1  
         * 8.2  
