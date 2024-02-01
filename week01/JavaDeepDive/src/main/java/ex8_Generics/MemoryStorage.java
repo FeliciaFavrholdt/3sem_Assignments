@@ -1,26 +1,29 @@
 package ex8_Generics;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
 public class MemoryStorage<T> implements DataStorage<T> {
 
-    private Map<String, T> map;
-
-    public MemoryStorage() {
-        map = new HashMap<>();
-    }
+    ArrayList<T> storage = new ArrayList<>();
 
     @Override
     public String store(T data) {
-        String id = UUID.randomUUID().toString(); // Generate unique ID
-        map.put(id, data);
-        return id;
+        if(data != null){
+            storage.add(data);
+            return "Data stored successfully";
+        }
+        return "Data not stored";
     }
 
     @Override
-    public T retrieve(String id) {
-        return map.get(id);
+    public T retrieve(String source) {
+        if(storage.contains(source)){
+            int sourceIndex = storage.indexOf(source);
+            return storage.get(sourceIndex);
+        }
+        return null;
     }
 }

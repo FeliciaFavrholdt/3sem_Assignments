@@ -31,7 +31,7 @@ public class MyExamples implements MyTransformingType, MyValidatingType {
         // Print out the doubled array
         System.out.println("Doubled Array:");
         for (int num : doubledArray) {
-            System.out.print(num + "\n");
+            System.out.printf(num + "\n");
         }
 
         System.out.println("--------------------------------------------------");
@@ -56,20 +56,20 @@ public class MyExamples implements MyTransformingType, MyValidatingType {
     }
 
     // Method to perform mapping operation on an array
-    private static int[] map(int[] a, MyTransformingType op) {
+    private static int[] map(int[] a, MyTransformingType transform) {
         int[] result = new int[a.length];
         for (int i = 0; i < a.length; i++) {
-            result[i] = op.transform(a[i]);
+            result[i] = transform.transform(a[i]);
         }
         return result;
     }
 
     // Method to perform filtering operation on an array
-    private static int[] filter(int[] a, MyValidatingType op) {
+    private static int[] filter(int[] a, MyValidatingType validate) {
         int[] array = new int[a.length];
 
         for (int i = 0; i < a.length; i++) {
-            boolean result = op.validate(a[i]);
+            boolean result = validate.validate(a[i]);
             if (result == true) {
                 array[i] = a[i];
             }

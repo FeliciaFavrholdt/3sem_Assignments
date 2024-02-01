@@ -1,5 +1,6 @@
 package ex9_Concurrency;
 
+import java.util.List;
 import java.util.concurrent.*;
 
 //9.2 Use the CompletableFuture class to execute multiple tasks concurrently and wait for their completion.
@@ -8,12 +9,14 @@ public class Examples {
     //9.1 Create a simple Task class that simulates some computation. The class should have a run() method that performs the computation for a fixed time
     private static class Task {
         void run() {
+            System.out.println("task begun");
             //Simulate some computation
             try {
                 Thread.sleep(1000); // Simulate 1 second of work
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            System.out.println("task ended");
         }
 
         void runWithException() {

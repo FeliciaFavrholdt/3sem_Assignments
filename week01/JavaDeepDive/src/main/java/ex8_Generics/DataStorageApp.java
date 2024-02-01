@@ -5,18 +5,23 @@ package ex8_Generics;
 public class DataStorageApp {
     public static void main(String[] args) {
 
-        //instance of each storage class
-        MemoryStorage<String> memoryStorage = new MemoryStorage<>();
-        FileStorage<Integer> fileStorage = new FileStorage<>("file.txt");
-        DatabaseStorage<Double> databaseStorage = new DatabaseStorage<>();
-
         //8.3 demonstrate their usage by storing and retrieving data of different types
         //MemoryStorage
+        MemoryStorage<String> memoryStorage = new MemoryStorage<>();
+        memoryStorage.store("Some data goes here");
+        String retrievedString = memoryStorage.retrieve(null);
+        System.out.println(retrievedString);
 
         //FileStorage
+        FileStorage<Employee> fileStorage = new FileStorage<>();
+        String filename = fileStorage.store(new Employee("John", 30));
+        Employee retrievedInt = fileStorage.retrieve(filename);
+        System.out.println(retrievedInt);
 
         //DatabaseStorage
-
-        // Create and demonstrate DatabaseStorage
+        DatabaseStorage<Double> databaseStorage = new DatabaseStorage<>();
+        databaseStorage.store(3.14);
+        Double retrievedDouble = databaseStorage.retrieve("3.14");
+        System.out.println(retrievedDouble);
     }
 }
