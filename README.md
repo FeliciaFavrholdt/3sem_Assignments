@@ -7,7 +7,7 @@
     * week02 
     * week03 ..etc. 
 
-    Every folder has its own README. file with a description of the assigments for that week.
+    Every folder has its own README. file with an overview of the assigments for that week.
 
 
 
