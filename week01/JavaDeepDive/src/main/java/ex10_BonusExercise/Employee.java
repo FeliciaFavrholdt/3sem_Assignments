@@ -1,5 +1,8 @@
 package ex10_BonusExercise;
 
+import java.text.DecimalFormat;
+import java.util.Random;
+
 public class Employee {
 
     //10.1 & 10.2 - Create an Employee class with attributes like name, age, department, and salary.
@@ -43,8 +46,8 @@ public class Employee {
         return department;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setDepartment(String s) {
+        s = "";
     }
 
     public double getSalary() {

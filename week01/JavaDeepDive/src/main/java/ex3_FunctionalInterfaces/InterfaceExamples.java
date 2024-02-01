@@ -13,7 +13,7 @@ public class InterfaceExamples {
 
     public static void main(String[] args) {
 
-        //Examples of functional interfaces in Java 8 (see commwnted out code below)
+        //Examples of functional interfaces in Java 8 (see commented out code below)
         /*
         //Consumer - takes in a value and returns nothing
         Consumer<String> consumer = (x) -> System.out.println(x);

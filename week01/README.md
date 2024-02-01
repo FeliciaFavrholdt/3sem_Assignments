@@ -45,15 +45,12 @@
     Exercise 9: Concurrency - NOT COMPLETED
     - See solution via package JavaDeepDive/src/main/java/ex9_Concurrency
 
-    Exercise 10: Task list exercise - NOT COMPLETED
+    Exercise 10: Task list exercise - PARTIALLY COMPLETED
     - see solution for 10.1 -> 10.7 in files via package JavaDeepDive/src/main/java/ex10_TaskList
-        * 10.1  
-        * 10.2  
-        * 10.3  
-        * 10.4 
-        * 10.5 
-        * 10.6 
-        * 10.7 
+        * 10.1, 10.2 - JavaDeepDive/src/main/java/ex10_BonusExercise/Employee.java  
+        * 10.3 -> 10.5 - JavaDeepDive/src/main/java/ex10_BonusExercise/DataCollection.java 
+        * 10.6 - JavaDeepDive/src/main/java/ex10_BonusExercise/CustomFunctionalInterfaces.java
+        * 10.7 - NOT COMPLETED
 
 ## Friday presentation
 I will be presenting on the topic of **Functional Programming**. This presentation will cover some of the following learning objectives: 
