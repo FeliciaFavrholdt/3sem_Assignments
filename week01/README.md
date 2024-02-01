@@ -36,13 +36,13 @@
         * 7.1 create Transaction class (Transaction.java)
         * 7.2 -> 7.4 implementation of methods (Examples.java)
 
-    Exercise 8: Generics - DOING
+    Exercise 8: Generics - UNCOMPLETED
     - see solution for 8.1 -> 8.3 in files via package JavaDeepDive/src/main/java/ex8_Generics
         * 8.1  
         * 8.2  
         * 8.3 
 
-    Exercise 9: Concurrency - UNCOMPLETED
+    Exercise 9: Concurrency - DOING
     - See solution via package JavaDeepDive/src/main/java/ex9_Concurrency
 
     Exercise 10: Task list exercise - UNCOMPLETED
