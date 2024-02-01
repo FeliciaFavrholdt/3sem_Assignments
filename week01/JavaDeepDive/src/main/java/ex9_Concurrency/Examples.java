@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 public class Examples {
 
     //9.1 Create a simple Task class that simulates some computation. The class should have a run() method that performs the computation for a fixed time
-    public class Task {
+    private static class Task {
         void run() {
             //Simulate some computation
             try {

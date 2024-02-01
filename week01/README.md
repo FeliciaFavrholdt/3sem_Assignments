@@ -36,16 +36,16 @@
         * 7.1 create Transaction class (Transaction.java)
         * 7.2 -> 7.4 implementation of methods (Examples.java)
 
-    Exercise 8: Generics - UNCOMPLETED
+    Exercise 8: Generics - NOT COMPLETED
     - see solution for 8.1 -> 8.3 in files via package JavaDeepDive/src/main/java/ex8_Generics
-        * 8.1  
-        * 8.2  
-        * 8.3 
+        * 8.1 interface (DataStorage.java)
+        * 8.2 implement storage classes (FileStorage.java + MemoryStorage.java + DatabaseStorage.java)
+        * 8.3 demonstrate usage of storage classes (DataStorageApp.java)
 
-    Exercise 9: Concurrency - DOING
+    Exercise 9: Concurrency - NOT COMPLETED
     - See solution via package JavaDeepDive/src/main/java/ex9_Concurrency
 
-    Exercise 10: Task list exercise - UNCOMPLETED
+    Exercise 10: Task list exercise - NOT COMPLETED
     - see solution for 10.1 -> 10.7 in files via package JavaDeepDive/src/main/java/ex10_TaskList
         * 10.1  
         * 10.2  
