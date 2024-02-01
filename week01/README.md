@@ -26,13 +26,10 @@
         * functional interfaces (MyTransformingType.java + MyValidatingType.java)
         * implementation of methods (MyExamples.java)
 
-    Exercise 6: Stream API - DOING
-    - see solution for 6.1 -> 6.5 in files via package JavaDeepDive/src/main/java/ex6_StreamsAPI
-        * 6.1 create book class -> see Book.java
-        * 6.2 
-        * 6.3 
-        * 6.4 
-        * 6.5  
+    Exercise 6: Stream API - COMPLETED
+    - see solution in files via package JavaDeepDive/src/main/java/ex6_StreamsAPI
+        * 6.1 create book class (Book.java)
+        * 6.2 -> 6.5 implementation of methods (Examples.java)
 
     Exercise 7: Collectors - UNCOMPLETED
     - see solution for 7.1 -> 7.4 in files via package JavaDeepDive/src/main/java/ex7_Collectors
