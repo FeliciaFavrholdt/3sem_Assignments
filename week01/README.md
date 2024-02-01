@@ -1,16 +1,16 @@
-## Overview - week 1 assignments
+## Java Deep Dive - week 1 assignments
 
-#### All code is written by Felicia Favrholdt
+#### This weeks topic is Java Deep Dive. Below is an overview of the assigments for the week and what is completed/not completed. The path to the solutions are listed also.  
 
-    Part 1: Lambda
+    Exercise 1: Lambda
     - uncompleted 
     - see solution in folder
 
-    Part 2: Functional programming
+    Exercise 2: Functional programming
     * 2.1 - uncompleted 
     * 2.2 - uncompleted 
 
-    Part 3: Functional interfaces
+    Exercise 3: Functional interfaces
     * 3.1 - uncompleted 
     * 3.2 - uncompleted
     * 3.3 - uncompleted 
@@ -18,39 +18,39 @@
     * 3.5 - uncompleted 
     - see solutions in folder
 
-    Part 4: Time API
+    Exercise 4: Time API
     * 4.1 - uncompleted 
     * 4.2 - uncompleted
     * 4.3 - uncompleted
     * 4.4 - uncompleted 
     * 4.5 - uncompleted
 
-    Part 5: Method references
+    Exercise 5: Method references
     - uncompleted 
 
-    Part 6: Stream API
+    Exercise 6: Stream API
     * 6.1 - uncompleted 
     * 6.2 - uncompleted
     * 6.3 - uncompleted
     * 6.4 - uncompleted
     * 6.5 - uncompleted 
 
-    Part 7: Collectors 
+    Exercise 7: Collectors 
     * 7.1 - uncompleted
     * 7.2 - uncompleted
     * 7.3 - uncompleted
     * 7.4 - uncompleted 
 
-    Part 8: Generics
+    Exercise 8: Generics
     * 8.1 - uncompleted 
     * 8.2 - uncompleted 
     * 8.3 - uncompleted
 
-    Part 9: Concurrency
+    Exercise 9: Concurrency
     * uncompleted  
     - See solution in folder 
 
-    Part 10: Task list exercise
+    Exercise 10: Task list exercise
     * 10.1 - uncompleted 
     * 10.2 - uncompleted 
     * 10.3 - uncompleted 
@@ -68,3 +68,5 @@ I will be presenting on the topic of **Functional Programming**. This presentati
         * Java 8 labmda expressions
         * Java 8 method references: static, instance, constructor
         * Java 8 default and static interface methods
+
+#### All code is written by Felicia Favrholdt
