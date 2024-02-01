@@ -1,8 +1,16 @@
 # # Third semester assignments
 
-### This is a repository for all my assignments in the third semester of my AP degree in Computer Science at CPH Business Lyngby.
+#### A repository for all my assignments in the third semester of my AP degree in Computer Science at CPH Business Lyngby.
 
-### Every week of the semester has its own folder (Example: week01, week02 etc.). Every folder has its own README. file with a description of the assigments.
+    The semester is categorised into folders by week: 
+    * week01
+    * week02 
+    * week03 ..etc. 
 
-### All code is written by Felicia Favrholdt
+    Every folder has its own README. file with a description of the assigments for that week.
+
+
+
+
+#### All code is written by Felicia Favrholdt
 

@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9b8dac3d-0488-4288-bd11-fb1a917fa041" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week01/JavaDeepDive/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week01/JavaDeepDive/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +151,7 @@
       <workItem from="1706730733775" duration="58000" />
       <workItem from="1706730857366" duration="231000" />
       <workItem from="1706731104732" duration="5660000" />
-      <workItem from="1706736788508" duration="10289000" />
+      <workItem from="1706736788508" duration="10999000" />
     </task>
     <servers />
   </component>
