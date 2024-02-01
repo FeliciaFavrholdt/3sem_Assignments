@@ -26,36 +26,39 @@
         * functional interfaces (MyTransformingType.java + MyValidatingType.java)
         * implementation of methods (MyExamples.java)
 
-    Exercise 6: Stream API
-    * 6.1 - uncompleted 
-    * 6.2 - uncompleted
-    * 6.3 - uncompleted
-    * 6.4 - uncompleted
-    * 6.5 - uncompleted 
+    Exercise 6: Stream API - DOING
+    - see solution for 6.1 -> 6.5 in files via package JavaDeepDive/src/main/java/ex6_StreamsAPI
+        * 6.1 create book class -> see Book.java
+        * 6.2 
+        * 6.3 
+        * 6.4 
+        * 6.5  
 
-    Exercise 7: Collectors 
-    * 7.1 - uncompleted
-    * 7.2 - uncompleted
-    * 7.3 - uncompleted
-    * 7.4 - uncompleted 
+    Exercise 7: Collectors - UNCOMPLETED
+    - see solution for 7.1 -> 7.4 in files via package JavaDeepDive/src/main/java/ex7_Collectors
+        * 7.1 
+        * 7.2 
+        * 7.3 
+        * 7.4  
 
-    Exercise 8: Generics
-    * 8.1 - uncompleted 
-    * 8.2 - uncompleted 
-    * 8.3 - uncompleted
+    Exercise 8: Generics - UNCOMPLETED
+    - see solution for 8.1 -> 8.3 in files via package JavaDeepDive/src/main/java/ex8_Generics
+        * 8.1  
+        * 8.2  
+        * 8.3 
 
-    Exercise 9: Concurrency
-    * uncompleted  
-    - See solution in folder 
+    Exercise 9: Concurrency - UNCOMPLETED
+    - See solution via package JavaDeepDive/src/main/java/ex9_Concurrency
 
-    Exercise 10: Task list exercise
-    * 10.1 - uncompleted 
-    * 10.2 - uncompleted 
-    * 10.3 - uncompleted 
-    * 10.4 - uncompleted
-    * 10.5 - uncompleted
-    * 10.6 - uncompleted
-    * 10.7 - uncompleted
+    Exercise 10: Task list exercise - UNCOMPLETED
+    - see solution for 10.1 -> 10.7 in files via package JavaDeepDive/src/main/java/ex10_TaskList
+        * 10.1  
+        * 10.2  
+        * 10.3  
+        * 10.4 
+        * 10.5 
+        * 10.6 
+        * 10.7 
 
 ## Friday presentation
 I will be presenting on the topic of **Functional Programming**. This presentation will cover some of the following learning objectives: 
