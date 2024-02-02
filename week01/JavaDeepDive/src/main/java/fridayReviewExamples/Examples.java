@@ -89,9 +89,9 @@ public class Examples {
 
         //Reduce
         List<Person> personList = List.of(
-                new Person("John", 25),
-                new Person("Jane", 30),
-                new Person("Jack", 35)
+                new Person("Jan", 25),
+                new Person("Mikkel", 30),
+                new Person("Henrik", 35)
         );
 
         //imperative approach
@@ -124,11 +124,11 @@ public class Examples {
         //METHOD REFERENCES
         //Static method reference
         Function<String, Integer> toIntegerStatic = Integer::valueOf;
-        Integer integerStatic = toIntegerStatic.apply("123");
+        Integer integerStatic = toIntegerStatic.apply("990");
         System.out.println(integerStatic);
 
         //Instance method reference
-        String string = "Hello World";
+        String string = "Dette er et eksempel";
         Consumer<String> printInstance = System.out::println;
         printInstance.accept(string);
 
