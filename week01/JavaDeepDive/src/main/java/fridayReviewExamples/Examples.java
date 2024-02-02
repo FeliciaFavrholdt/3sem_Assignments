@@ -63,21 +63,61 @@ public class Examples {
         System.out.println(integerLambda);
 
         //STREAM API
-        List<String> list = List.of("A", "B", "C", "D", "E");
-        List<Integer> listInt = List.of(1, 2, 3, 4, 5);
-        List<Person> personList = List.of(new Person("John", 25), new Person("Jane", 30), new Person("Jack", 35));
-
         //Filter
-        list.stream().filter(s -> s.startsWith("A")).forEach(System.out::println);
+        List<String> list = List.of("Abe", "Banan", "C", "Dyr", "Elefant");
+
+        //imperative approach
+        for (String s : list) {
+            if (s.startsWith("A")) {
+                System.out.println(s);
+            }
+        }
+
+        //declarative approach
+        list.stream().filter(s -> s.startsWith("D")).forEach(System.out::println);
 
         //Map
+        List<Integer> listInt = List.of(1, 2, 3, 4, 5);
+
+        //imperative approach
+        for (int i : listInt) {
+            System.out.println(i * 2);
+        }
+
+        //declarative approach
         listInt.stream().map(i -> i * 2).forEach(System.out::println);
 
         //Reduce
+        List<Person> personList = List.of(
+                new Person("John", 25),
+                new Person("Jane", 30),
+                new Person("Jack", 35)
+        );
+
+        //imperative approach
+        int age = 0;
+        for (Person p : personList) {
+            age += p.getAge();
+        }
+        System.out.println(age);
+
+        //declarative approach
         int sum = listInt.stream().reduce(0, (a, b) -> a + b);
         System.out.println(sum);
 
         //Find first
+
+        //imperative approach
+        Person person1 = null;
+        for (Person p : personList) {
+            if (p.getName().startsWith("J")) {
+                person1 = p;
+                break;
+            }
+        }
+        System.out.println(person1);
+
+        //declarative approach
         Person person = personList.stream().filter(p -> p.getName().startsWith("J")).findFirst().orElse(null);
         System.out.println(person);
 
