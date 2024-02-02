@@ -1,0 +1,63 @@
+Functional programming is a programming paradigm that treats computation as the
+evaluation of mathematical functions and avoids changing-state and mutable data.
+It emphasizes expressions and declarations rather than statements and mutable data.
+Key concepts in functional programming include higher-order functions, immutability,
+and referential transparency.
+
+Java 8 introduced several features that enable functional programming style:
+
+LAMBDA EXPRESSIONS
+Lambda expressions allow you to treat functionality as a method
+argument or to create anonymous functions. They simplify the syntax required for
+defining functional interfaces (interfaces with only one abstract method).
+
+Example:
+    List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+    names.forEach(name -> System.out.println(name));
+
+FUNCTIONAL INTERFACES
+Functional interfaces are interfaces that contain only
+one abstract method. They can be annotated with the @FunctionalInterface
+annotation to ensure that they only have one abstract method.
+
+Example:
+    @FunctionalInterface
+    interface MyFunction {
+        void myMethod();
+    }
+
+
+DEFAULT METHODS IN INTERFACES
+Java 8 introduced the ability to have method implementations in interfaces
+using default methods. This enables the addition of new methods to interfaces
+without breaking existing implementations.
+
+Example:
+interface MyInterface {
+    default void myMethod() {
+        System.out.println("Default method implementation");
+    }
+}
+
+STREAM API
+The Stream API provides a fluent interface for processing sequences of elements.
+It enables functional-style operations such as map, filter, reduce, and collect on collections.
+
+Example:
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+int sum = numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .mapToInt(n -> n * 2)
+                .sum();
+
+OPTIONAL CLASS
+Java 8 introduced the Optional class, which is a container object that may or may not contain
+a non-null value. It encourages the avoidance of null references.
+
+Example:
+Optional<String> maybeName = Optional.ofNullable(getName());
+String name = maybeName.orElse("DefaultName");
+
+By leveraging these features, Java 8 enables developers to write code in a more functional style,
+emphasizing immutability, higher-order functions, and stream processing for better readability,
+maintainability, and parallelism.
