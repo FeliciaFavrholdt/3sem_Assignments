@@ -1,0 +1,92 @@
+[
+  {
+    "firstName": "Jens",
+    "lastName": "Jensen",
+    "birthDate": "1970-05-05",
+    "address": {
+      "street": "Langgade 1",
+      "city": "København",
+      "zipCode": 1000
+    },
+    "account": {
+      "id": "0",
+      "balance": "1.000.000",
+      "isActive": true
+    }
+  },
+  {
+    "firstName": "Bente",
+    "lastName": "Madsen",
+    "birthDate": "1960-01-01",
+    "address": {
+      "street": "Hovedgaden 1",
+      "city": "Dragør",
+      "zipCode": 2791
+    },
+    "account": {
+      "id": "1",
+      "balance": "100.000",
+      "isActive": true
+    }
+  },
+  {
+    "firstName": "Mads",
+    "lastName": "Johnsen",
+    "birthDate": "1985-05-15",
+    "address": {
+      "street": "Stor Kongensgade 2",
+      "city": "København",
+      "zipCode": 1264
+    },
+    "account": {
+      "id": "2",
+      "balance": "3.307.864",
+      "isActive": false
+    }
+  },
+  {
+    "firstName": "Svend Åge",
+    "lastName": "Mikkelsen",
+    "birthDate": "1988-12-10",
+    "address": {
+      "street": "Munkebjergvej 89",
+      "city": "Odense",
+      "zipCode": 5230
+    },
+    "account": {
+      "id": "3",
+      "balance": "4.200.000",
+      "isActive": true
+    }
+  },
+  {
+    "firstName": "Hanne",
+    "lastName": "Friis",
+    "birthDate": "1977-09-25",
+    "address": {
+      "street": "Elmedal 5",
+      "city": "Helsinge",
+      "zipCode": 3200
+    },
+    "account": {
+      "id": "4",
+      "balance": "78.932",
+      "isActive": false
+    }
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Christiansen",
+    "birthDate": "1995-03-08",
+    "address": {
+      "street": "Sandøgade 22",
+      "city": "Århus",
+      "zipCode": 8200
+    },
+    "account": {
+      "id": "5",
+      "balance": "14.000",
+      "isActive": true
+    }
+  }
+]
