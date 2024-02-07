@@ -1,9 +1,17 @@
-package ThreadsExercise;
+package ThreadsExercise.MondayTuesday;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class TaskExecutor {
+
+/*
+Exercise Description:
+   Write a program where the main thread creates a number of tasks for an ExecutorService.
+   The first task should print AAA, the next BBB,CCC etc. up to ZZZ (there are 25 characters in total).
+   There should be 4 worker threads in the executor service.
+*/
+
+public class Ex_1 {
 
     public static void main(String[] args) {
         // Create a fixed thread pool with 4 worker threads
@@ -35,20 +43,4 @@ public class TaskExecutor {
             System.out.println(taskName);
         }
     }
-
-    private static class Counter {
-        private int count = 0;
-
-        // Method to increment the count, synchronized to ensure thread safety
-        public synchronized void increment() {
-            count++;
-        }
-
-        // Method to retrieve the current count value
-        public int getCount() {
-            return count;
-        }
-    }
-
-
 }
