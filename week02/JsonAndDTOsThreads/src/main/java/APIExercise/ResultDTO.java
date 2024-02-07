@@ -2,20 +2,21 @@ package APIExercise;
 
 import java.time.LocalDate;
 
-public class MovieDTO {
+public class ResultDTO {
 
     private String title;
-    private String releaseDate;
+    private LocalDate releaseDate;
+    private String releaseYear;
     private double rating;
     private String id;
 
-
-    public MovieDTO() {
+    public ResultDTO() {
     }
 
-    public MovieDTO(String title, String releaseDate, double rating, String id) {
+    public ResultDTO(String title, LocalDate releaseDate, String releaseYear, double rating, String id) {
         this.title = title;
         this.releaseDate = releaseDate;
+        this.releaseYear = releaseYear;
         this.rating = rating;
         this.id = id;
     }
@@ -24,8 +25,12 @@ public class MovieDTO {
         return title;
     }
 
-    public String getReleaseDate() {
+    public LocalDate getReleaseDate() {
         return releaseDate;
+    }
+
+    public String getReleaseYear() {
+        return releaseYear;
     }
 
     public double getRating() {
@@ -38,13 +43,12 @@ public class MovieDTO {
 
     @Override
     public String toString() {
-        return "MovieDTO{" +
+        return "ResultDTO{" +
                 "title='" + title + '\'' +
                 ", releaseDate='" + releaseDate + '\'' +
+                ", releaseYear='" + releaseYear + '\'' +
                 ", rating=" + rating +
                 ", id='" + id + '\'' +
                 '}';
     }
 }
-
-

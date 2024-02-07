@@ -2,6 +2,7 @@ package APIExercise;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 
 
 public class Main {
@@ -23,10 +24,10 @@ public class Main {
 
         //Get array of movies by rating
         System.out.println("Array of movies by rating");
-        System.out.println(Arrays.toString(movieController.getAllByRating()));
+        System.out.println(Arrays.toString(movieController.getAllByRating(8.5)));
 
         //Get array of movies by release date
         System.out.println("Array of movies by release date");
-        System.out.println(Arrays.toString(movieController.getAllByReleaseDate()));
+        System.out.println(Arrays.toString(movieController.getAllByReleaseDate("1994-10-14")));
     }
 }
