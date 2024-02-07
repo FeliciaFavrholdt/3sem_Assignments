@@ -6,7 +6,6 @@ import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -78,3 +77,4 @@ public class Main {
                     System.out.println();
                 });
     }
+}
