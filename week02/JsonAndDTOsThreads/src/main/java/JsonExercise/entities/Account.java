@@ -1,11 +1,8 @@
 package JsonExercise.entities;
 
-//3.1 create a class Address with the following attributes: street, city, zipCode
-
 import JsonExercise.AccountDTO;
 
 public class Account {
-
     String firstName;
     String lastName;
     String birthDate;

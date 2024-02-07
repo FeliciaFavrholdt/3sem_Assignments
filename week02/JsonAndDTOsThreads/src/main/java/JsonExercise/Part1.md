@@ -9,7 +9,7 @@ JSON stands for JavaScript Object Notation. It is:
 * a popular choice for many software applications and web services.
 
 #### What is the difference between JSON and XML?
-SON nd XML (eXtensible Markup Language) have several differences:
+JSON and XML (eXtensible Markup Language) have several differences:
 
 1. **Syntax:**: 
 * JSON uses a lightweight, easy-to-read syntax resembling JavaScript object literal notation. It primarily consists of key-value pairs and arrays.
