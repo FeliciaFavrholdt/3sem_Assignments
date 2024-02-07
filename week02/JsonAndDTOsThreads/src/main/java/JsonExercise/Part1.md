@@ -11,7 +11,7 @@ JSON stands for JavaScript Object Notation. It is:
 #### What is the difference between JSON and XML?
 JSON and XML (eXtensible Markup Language) have several differences:
 
-1. **Syntax:**: 
+1. **Syntax**: 
 * JSON uses a lightweight, easy-to-read syntax resembling JavaScript object literal notation. It primarily consists of key-value pairs and arrays.
 * XML uses a markup language with tags to define elements and attributes. Tags are enclosed in angle brackets, allowing for more complex hierarchies. 
 
@@ -20,7 +20,7 @@ JSON and XML (eXtensible Markup Language) have several differences:
 * XML can be more verbose and may require more effort to parse and comprehend due to its markup-based structure. 
 
 3. **Parsing and Processing**: 
-* SON parsing is generally faster and more efficient compared to XML parsing. JSON has a simpler structure and fewer overheads, making it quicker to process.
+* JSON parsing is generally faster and more efficient compared to XML parsing. JSON has a simpler structure and fewer overheads, making it quicker to process.
 * XML parsers are more complex and require more resources to process due to the hierarchical nature of XML documents. 
 
 4. **Data Types**: 
