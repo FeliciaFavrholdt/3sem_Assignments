@@ -1,4 +1,4 @@
-package ThreadsExercise.MondayTuesday;
+package ThreadsExercise;
 
 import java.util.ArrayList;
 import java.util.List;

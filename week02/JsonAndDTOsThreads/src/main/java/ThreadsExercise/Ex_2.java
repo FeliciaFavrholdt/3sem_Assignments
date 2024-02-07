@@ -1,4 +1,4 @@
-package ThreadsExercise.MondayTuesday;
+package ThreadsExercise;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

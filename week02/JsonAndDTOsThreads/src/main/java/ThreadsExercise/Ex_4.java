@@ -1,4 +1,4 @@
-package ThreadsExercise.MondayTuesday;
+package ThreadsExercise;
 
 //Exercise Description:
 /* Most operating systems have a program that shows the performance of the system
