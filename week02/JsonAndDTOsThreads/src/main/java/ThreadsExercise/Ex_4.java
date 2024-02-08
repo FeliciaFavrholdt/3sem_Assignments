@@ -25,7 +25,7 @@ public class Ex_4 {
         System.out.println("Creates tasks for executor");
 
         // Submit tasks to the executor
-        for (int i = 0; i < 1000000000; i++) {
+        for (int i = 0; i < 1_000_000; i++) {
             // Submit a task to print the character
             executor.submit(new PrintTask("Task " + i));
         }

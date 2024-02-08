@@ -28,66 +28,28 @@ public class APICollector {
     public static void main(String[] args) throws Exception {
 
         //Solution using ExecutorService
+        List<Future<JokeDTO>> futures = new ArrayList<>();
+
         String[] urls = new String[]{
                 "https://icanhazdadjoke.com/api",
                 "https://api.chucknorris.io/jokes/random",
                 "https://api.kanye.rest",
                 "https://api.whatdoestrumpthink.com/api/v1/quotes/random",
-                "https://api.spacexdata.com/v5/launches/latest"
+                "https://api.spacexdata.com/v5/launches/latest",
+                "https://catfact.ninja/fact",
+                "https://api.agify.io/?name=felicia",
+                "https://dog.ceo/api/breeds/image/random",
+                "https://restcountries.com/v3.1/name/Spain?fullText=true",
+                "https://catfact.ninja/fact",
         };
 
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
-        List<Future<JokeDTO>> futures = new ArrayList<>();
+        ExecutorService executor = Executors.newFixedThreadPool(10);
 
-        for (String url : urls) {
-            futures.add(executorService.submit(() -> fetchData(url)));
-        }
-
-        List<JokeDTO> jokeDTOs = new ArrayList<>();
-
-        for (Future<JokeDTO> future : futures) {
-            try {
-                jokeDTOs.add(future.get());
-            } catch (InterruptedException | ExecutionException e ) {
-                e.printStackTrace();
-            }
-        }
-
-        executorService.shutdown();
-
-        // Printing the data
-        for (JokeDTO jokeDTO : jokeDTOs) {
-            System.out.println(jokeDTO);
-        }
-    }
-
-    public static JokeDTO fetchData(String url) throws IOException {
-        URL apiUrl = new URL(url);
-        HttpURLConnection connection = (HttpURLConnection) apiUrl.openConnection();
-        connection.setRequestProperty("Accept", "application/json");
-        connection.setRequestProperty("User-Agent", "Mozilla/5.0");
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        StringBuilder response = new StringBuilder();
-        String line;
-
-        while ((line = reader.readLine()) != null) {
-            response.append(line);
-        }
-
-        reader.close();
-
-        // Assuming the JSON response has a 'joke' field for all APIs
-        String joke = response.toString();
-
-        // Extracting source from URL
-        String source = url.substring(url.indexOf("//") + 2, url.indexOf("/", url.indexOf("//") + 2));
-
-        return new JokeDTO(source, joke);
     }
 }
 
-        //Solution using CompletableFuture
+
+//Solution using CompletableFuture
         /*List<String> urls = List.of(
                 "https://icanhazdadjoke.com/",
                 "https://api.chucknorris.io/jokes/random",

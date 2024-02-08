@@ -45,8 +45,11 @@ public class Ex_5 {
         };
 
         // Submit tasks to ExecutorService
-        executor.submit(taskOne);
-        executor.submit(taskTwo);
+
+        for (int i = 0; i < 10; i++) {
+            executor.submit(taskOne);
+            executor.submit(taskTwo);
+        }
 
         // Shutdown the executor
         executor.shutdown();

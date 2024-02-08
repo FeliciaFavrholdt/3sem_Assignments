@@ -58,7 +58,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
         }
     */
 
-//Solution: answers to the questions:
+//Solution:
 /* The list does not always contain a thousand numbers because the list is not thread safe
      - so concurrent modifications can lead to data inconsistencies.
      The list is shared among the threads and the addCount method is not synchronized.
