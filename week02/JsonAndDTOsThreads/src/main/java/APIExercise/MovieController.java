@@ -1,76 +1,76 @@
 package APIExercise;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static APIExercise.Main.gson;
 
 public class MovieController {
 
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    List<MovieDTO> movies = Arrays.asList(
-            new MovieDTO("The Shawshank Redemption", "1994-10-14", 9.3, "tt0111161"),
-            new MovieDTO("The Godfather", "1972-03-24", 9.2, "tt0068646"),
-            new MovieDTO("The Dark Knight", "2008-07-18", 9.0, "tt0468569"),
-            new MovieDTO("The Godfather: Part II", "1974-12-20", 9.0, "tt0071562"),
-            new MovieDTO("The Lord of the Rings: The Return of the King", "2003-12-17", 8.9, "tt0167260"),
-            new MovieDTO("Pulp Fiction", "1994-10-14", 8.9, "tt0110912"),
-            new MovieDTO("12 angry Men", "1957-04-10", 8.9, "tt0050083"),
-            new MovieDTO("The Good, the Bad and the Ugly", "1966-12-29", 8.8, "tt0060196"),
-            new MovieDTO("Forrest Gump", "1994-07-06", 8.8, "tt0109830"),
-            new MovieDTO("Fight Club", "1999-10-15", 8.8, "tt0137523"),
-            new MovieDTO("Inception", "2010-07-16", 8.7, "tt1375666")
-    );
+    public static List<MovieDTO> movies = new ArrayList<>();
 
+    // method to get movies by rating
+    public static List<MovieDTO> getByRating(List<MovieDTO> movies, double rating) {
+        return movies.stream().filter(movieDTO -> movieDTO.getVote_average() >= rating)
+                .collect(Collectors.toList());
+    }
 
-    public String requestConnection(String url) {
-        OkHttpClient client = new OkHttpClient();
+    // method to get movies by release date
+    public static List<MovieDTO> getSortedByReleaseDate(List<MovieDTO> movies, int releaseYear) {
 
-        Request request = new Request.Builder()
-                //.url("https://api.themoviedb.org/3/authentication")
+        return movies.stream()
+                .sorted(Comparator.comparing(MovieDTO::getRelease_date))
+                .collect(Collectors.toList());
+    }
+
+    // method to get movie by id
+    public static MovieDTO getMovieById(String id, String apiKey) {
+        String url = "https://api.themoviedb.org/3/movie/{id}?api_key={key}"
+                .replace("{id}", id)
+                .replace("{key}", apiKey);
+
+        String response = getResponseByAPIKey(url);
+        System.out.println("JSON: " + response);
+
+        MovieDTO movieDTO = gson.fromJson(response, MovieDTO.class);
+        System.out.println("Movie title: " + movieDTO.getTitle());
+
+        return movieDTO;
+    }
+
+    public static String getResponseByAPIKey(String url) {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+        Request req = new Request.Builder()
                 .url(url)
                 .get()
                 .addHeader("accept", "application/json")
-                .addHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiN2ExZGI2NDg2YzFiNTg4MTQ4MTAwZTJjODQzYzU4OCIsInN1YiI6IjY1YmZlZGJhZmM2NTM4MDE0OWU5NjBmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Vn8w-mIE8MCYtayQcyOkbCyTG2PQKlZy1eV2H9cazlQ")
+                .addHeader("Authorization", "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiN2ExZGI2NDg2YzFiNTg4MTQ4MTAwZTJjODQzYzU4OCIsInN1YiI6IjY1YmZlZGJhZmM2NTM4MDE0OWU5NjBmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Vn8w-mIE8MCYtayQcyOkbCyTG2PQKlZy1eV2H9cazlQ")
                 .build();
-
         try {
-            Response response = client.newCall(request).execute();
-            String responseBody = response.body().string();
-            System.out.println(responseBody);
-            return responseBody;
+            Response res = client.newCall(req).execute();
+            return res.body().string();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
-    public String getByTitle() {
-        return requestConnection("https://api.themoviedb.org/3/search/movie?query={movieTitle}"
-                .replace("{movieTitle}", getByTitle()));
-    }
-
-    public String getById() {
-        return requestConnection("https://api.themoviedb.org/3/find/{movieID}?external_source=imdb_id"
-                .replace("{movieID}", getById()));
-    }
-
-    public double[] getAllByRating(double rating) {
-        return movies.stream()
-                .filter(movie -> movie.getRating() == rating)
-                .mapToDouble(MovieDTO::getRating)
-                .toArray();
-    }
-
-    public double[] getAllByReleaseDate(String releaseDate) {
-        return movies.stream()
-                .filter(movie -> movie.getReleaseDate().equals(releaseDate))
-                .mapToDouble(MovieDTO::getRating)
-                .toArray();
-    }
+//    public String getMovieById(String movieId, String key) {
+//        String url = "https://api.themoviedb.org/3/movie/{id}?api_key={key}"
+//                .replace("{id}", movieId)
+//                .replace("{key}", key);
+//
+//        String response = getResponseByAPIKey(url);
+//        System.out.println("JSON: " + response);
+//
+//        MovieDTO movieDTO = gson.fromJson(response, MovieDTO.class);
+//        System.out.println("Movie title: " + movieDTO.getTitle());
+//        return response;
+//    }
 }

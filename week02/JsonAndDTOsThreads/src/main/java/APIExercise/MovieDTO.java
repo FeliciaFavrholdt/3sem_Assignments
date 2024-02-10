@@ -4,47 +4,57 @@ import java.time.LocalDate;
 
 public class MovieDTO {
 
-    private String title;
-    private String releaseDate;
-    private double rating;
-    private String id;
+    String title;
+    String overview;
+    String release_date;
+    double vote_average;
 
-
-    public MovieDTO() {
-    }
-
-    public MovieDTO(String title, String releaseDate, double rating, String id) {
+    public MovieDTO(String title, String overview, String release_date, double vote_average) {
         this.title = title;
-        this.releaseDate = releaseDate;
-        this.rating = rating;
-        this.id = id;
+        this.overview = overview;
+        this.release_date = release_date;
+        this.vote_average = vote_average;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getReleaseDate() {
-        return releaseDate;
+    public String getOverview() {
+        return overview;
     }
 
-    public double getRating() {
-        return rating;
+    public String getRelease_date() {
+        return release_date;
     }
 
-    public String getId() {
-        return id;
+    public double getVote_average() {
+        return vote_average;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
+
+    public void setRelease_date(String release_date) {
+        this.release_date = release_date;
+    }
+
+    public void setVote_average(double vote_average) {
+        this.vote_average = vote_average;
     }
 
     @Override
     public String toString() {
         return "MovieDTO{" +
                 "title='" + title + '\'' +
-                ", releaseDate='" + releaseDate + '\'' +
-                ", rating=" + rating +
-                ", id='" + id + '\'' +
+                ", overview='" + overview + '\'' +
+                ", release_date='" + release_date + '\'' +
+                ", vote_average=" + vote_average +
                 '}';
     }
 }
-
-
