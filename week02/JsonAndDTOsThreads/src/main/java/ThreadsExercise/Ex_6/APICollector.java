@@ -27,7 +27,7 @@ import java.util.List;
 
 
 //Solution using ExecutorService
-public class Main {
+public class APICollector {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         String[] urls = new String[]{
                 "https://icanhazdadjoke.com/api",
