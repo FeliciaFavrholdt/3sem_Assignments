@@ -1,6 +1,6 @@
 package ThreadsExercise.Ex_6.dtos;
 
-class ChuckNorrisDTO {
+public class ChuckNorrisDTO {
     private String value;
 
     public String getValue() {

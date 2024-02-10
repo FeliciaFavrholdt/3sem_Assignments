@@ -1,7 +1,6 @@
 package ThreadsExercise.Ex_6;
 
-import ThreadsExercise.Ex_6.dtos.JokeDTO;
-import ThreadsExercise.Ex_6.dtos.MegaDTO;
+import ThreadsExercise.Ex_6.dtos.*;
 
 import java.util.ArrayList;
 import java.util.concurrent.*;
@@ -60,19 +59,19 @@ public class Main {
                         megaDTO.addJokeDTO(jokeDTO);
                         break;
                     case "https://api.chucknorris.io/jokes/random":
-                        ChuckNorrisJokeDTO chuckNorrisJokeDTO = new ChuckNorrisJokeDTO();
-                        chuckNorrisJokeDTO.setValue(response.body());
-                        megaDTO.addChuckNorrisJokeDTO(chuckNorrisJokeDTO);
+                        ChuckNorrisDTO chuckNorrisDTO = new ChuckNorrisDTO();
+                        chuckNorrisDTO.setValue(response.body());
+                        megaDTO.addChuckNorrisDTO(chuckNorrisDTO);
                         break;
                     case "https://api.kanye.rest":
-                        KanyeQuoteDTO kanyeQuoteDTO = new KanyeQuoteDTO();
-                        kanyeQuoteDTO.setQuote(response.body());
-                        megaDTO.addKanyeQuoteDTO(kanyeQuoteDTO);
+                        KanyeDTO kanyeDTO = new KanyeDTO();
+                        kanyeDTO.setQuote(response.body());
+                        megaDTO.addKanyeDTO(kanyeDTO);
                         break;
                     case "https://api.whatdoestrumpthink.com/api/v1/quotes/random":
-                        TrumpQuoteDTO trumpQuoteDTO = new TrumpQuoteDTO();
-                        trumpQuoteDTO.setMessage(response.body());
-                        megaDTO.addTrumpQuoteDTO(trumpQuoteDTO);
+                        TrumpDTO trumpDTO = new TrumpDTO();
+                        trumpDTO.setMessage(response.body());
+                        megaDTO.addTrumpDTO(trumpDTO);
                         break;
                     case "https://api.spacexdata.com/v5/launches/latest":
                         LaunchDTO launchDTO = new LaunchDTO();

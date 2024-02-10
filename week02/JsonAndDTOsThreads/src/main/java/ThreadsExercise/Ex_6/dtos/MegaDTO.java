@@ -14,15 +14,15 @@ public class MegaDTO {
         jokeDTOList.add(jokeDTO);
     }
 
-    public void addChuckNorrisJokeDTO(ChuckNorrisDTO chuckNorrisDTO) {
+    public void addChuckNorrisDTO(ChuckNorrisDTO chuckNorrisDTO) {
         chuckNorrisDTOList.add(chuckNorrisDTO);
     }
 
-    public void addKanyeQuoteDTO(KanyeDTO kanyeDTO) {
+    public void addKanyeDTO(KanyeDTO kanyeDTO) {
         kanyeDTOList.add(kanyeDTO);
     }
 
-    public void addTrumpQuoteDTO(TrumpDTO trumpDTO) {
+    public void addTrumpDTO(TrumpDTO trumpDTO) {
         trumpDTOList.add(trumpDTO);
     }
 

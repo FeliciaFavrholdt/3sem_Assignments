@@ -1,6 +1,6 @@
 package ThreadsExercise.Ex_6.dtos;
 
-class JokeDTO {
+public class JokeDTO {
     private String joke;
 
     public String getJoke() {
