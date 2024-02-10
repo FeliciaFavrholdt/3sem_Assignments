@@ -14,7 +14,7 @@
     * Part 3.4 - DTO class (AccountDTO.java)
     * Part 3.5 -> 3.7 Implementation of methods (Main.java)
 
-    THREADS Exercise - NOT COMPLETED
+    THREADS Exercise - COMPLETED
     - see solution in files via package JsonAndDTOsThreads/src/main/java/ThreadsExercise
 
 ### Friday presentation 
