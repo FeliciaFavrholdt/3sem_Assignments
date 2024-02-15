@@ -1,7 +1,7 @@
 ## JPA - week 3 assignments
 
 ## Overview
-This weeks assignments have their own folder (part1, part2, part3) etc. 
+This weeks assignments have their own folder (Part1, Part2, Part3) etc. (Path: week03/JPA_Week1/Part1). 
 In each folder a new project exists as this is part of the assignment.  
 The databases we are referring to are defined in line 23 in the 'HibernateConfig.java' file.
 We are using docker to run pgAdmin and the databases locally.
