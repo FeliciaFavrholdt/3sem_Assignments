@@ -24,6 +24,7 @@ public class Package {
     @Column(name = "id", nullable = false)
     private int id;
 
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "tracking_number", nullable = false, unique = true)
     private String trackingNumber;
 
@@ -45,6 +46,14 @@ public class Package {
     public void setLastUpdated() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         lastUpdated = LocalDateTime.now().format(dtf);
+    }
+
+    public Package(String trackingNumber, String senderName, String receiverName, DeliveryStatus deliveryStatus, String lastUpdated) {
+        this.trackingNumber = trackingNumber;
+        this.senderName = senderName;
+        this.receiverName = receiverName;
+        this.deliveryStatus = deliveryStatus;
+        this.lastUpdated = lastUpdated;
     }
 
     enum DeliveryStatus {
