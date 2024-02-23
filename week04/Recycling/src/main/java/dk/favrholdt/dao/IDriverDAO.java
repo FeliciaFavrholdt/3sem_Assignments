@@ -14,7 +14,7 @@ public interface IDriverDAO {
     void deleteDriver(String id);
     List<Driver> findAllDriversEmployedAtTheSameYear(String year);
     List<Driver> fetchAllDriversWithSalaryGreaterThan10000();
-    double fetchHighestSalary();
+    BigDecimal fetchHighestSalary();
     List<String> fetchFirstNameOfAllDrivers();
     long calculateNumberOfDrivers();
     Driver fetchDriverWithHighestSalary();

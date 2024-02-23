@@ -67,7 +67,7 @@ public class DriverDAOImpl implements IDriverDAO {
 
     @Override
     public List<Driver> findAllDriversEmployedAtTheSameYear(String year) {
-        try(EntityManager em = emf.createEntityManager()) {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
             List<Driver> drivers = em.createQuery("SELECT d FROM Driver d WHERE EXTRACT(YEAR FROM d.employmentDate) = :year", Driver.class)
                     .setParameter("year", year)
@@ -80,7 +80,7 @@ public class DriverDAOImpl implements IDriverDAO {
 
     @Override
     public List<Driver> fetchAllDriversWithSalaryGreaterThan10000() {
-        try(EntityManager em = emf.createEntityManager()) {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
             List<Driver> drivers = em.createQuery("SELECT d FROM Driver d WHERE d.salary > 10000", Driver.class)
                     .getResultList();
@@ -91,10 +91,10 @@ public class DriverDAOImpl implements IDriverDAO {
     }
 
     @Override
-    public double fetchHighestSalary() {
-        try(EntityManager em = emf.createEntityManager()) {
+    public BigDecimal fetchHighestSalary() {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-            double highestSalary = em.createQuery("SELECT MAX(d.salary) FROM Driver d", Double.class)
+            BigDecimal highestSalary = em.createQuery("SELECT MAX(d.salary) FROM Driver d", BigDecimal.class)
                     .getSingleResult();
             em.getTransaction().commit();
             em.close();
@@ -104,7 +104,7 @@ public class DriverDAOImpl implements IDriverDAO {
 
     @Override
     public List<String> fetchFirstNameOfAllDrivers() {
-        try(EntityManager em = emf.createEntityManager()) {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
             List<String> firstNames = em.createQuery("SELECT d.name FROM Driver d", String.class)
                     .getResultList();
@@ -116,7 +116,7 @@ public class DriverDAOImpl implements IDriverDAO {
 
     @Override
     public long calculateNumberOfDrivers() {
-        try(EntityManager em = emf.createEntityManager()) {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
             long numberOfDrivers = em.createQuery("SELECT COUNT(d) FROM Driver d", Long.class)
                     .getSingleResult();
@@ -128,7 +128,7 @@ public class DriverDAOImpl implements IDriverDAO {
 
     @Override
     public Driver fetchDriverWithHighestSalary() {
-        try(EntityManager em = emf.createEntityManager()) {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
             Driver driver = em.createQuery("SELECT d FROM Driver d WHERE d.salary = (SELECT MAX(d.salary) FROM Driver d)", Driver.class)
                     .getSingleResult();
