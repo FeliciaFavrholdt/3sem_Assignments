@@ -1,10 +1,20 @@
-# Assignment Readme Guidelines
+## JPA - week 4 assignments
 
 ## Overview
+The databases we are referring to are defined in line 23 in the 'HibernateConfig.java' file.
+We are using docker to run pgAdmin and the databases locally.
+Each project has its own folder. 
 
-- Your name
-- which assignment are included
-- which one are completed and which one are not
+    DOLPHIN:
+    
+    RECYCLING: 
+
+    SCHOOL: 
+
+    GLS DELIVERY:
+
 
 ## Friday presentation
-- add the friday presentation into the weekly folder
+- ???
+
+#### All code is written by Felicia Favrholdt
